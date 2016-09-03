@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.2)  3 SEP 2016 11:17
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.2)  3 SEP 2016 11:25
 entering extended mode
 **Shih-HaoTseng_Resume.tex
 (D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.tex
@@ -88,7 +88,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \TX@cols=\count90
 \TX@ftn=\toks17
 )
-No file Shih-HaoTseng_Resume.aux.
+(D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
@@ -101,6 +101,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -226,13 +227,8 @@ Overfull \hbox (5.99998pt too wide) in alignment at lines 119--119
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--120
+Underfull \hbox (badness 10000) in paragraph at lines 107--129
 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 128--128
-[][] 
  []
 
 [1
@@ -240,9 +236,9 @@ Overfull \hbox (0.61905pt too wide) in alignment at lines 128--128
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.aux) ) 
 Here is how much of TeX's memory you used:
- 1052 strings out of 493921
- 13599 string characters out of 3140456
- 78429 words of memory out of 3000000
+ 1054 strings out of 493921
+ 13711 string characters out of 3140456
+ 76429 words of memory out of 3000000
  4391 multiletter control sequences out of 15000+200000
  10339 words of font info for 23 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -257,9 +253,9 @@ onts\pk\ljfour\jknappen\ec\dpi600\ecxc2074.pk><D:/Program_files/Programming/LaT
 ex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program_files/Program
 ming/LaTex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Program_files/
 Programming/LaTex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Shih-HaoTseng_Resume.pdf (1 page, 94940 bytes).
+Output written on Shih-HaoTseng_Resume.pdf (1 page, 95788 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
+ 237 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
