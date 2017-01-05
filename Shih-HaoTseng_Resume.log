@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.2)  5 JAN 2017 12:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.2)  5 JAN 2017 12:35
 entering extended mode
 **Shih-HaoTseng_Resume.tex
 (D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.tex
@@ -296,7 +296,7 @@ Overfull \hbox (5.99998pt too wide) in alignment at lines 87--87
 Here is how much of TeX's memory you used:
  1069 strings out of 493921
  14200 string characters out of 3140456
- 79794 words of memory out of 3000000
+ 78794 words of memory out of 3000000
  4396 multiletter control sequences out of 15000+200000
  10339 words of font info for 23 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -311,7 +311,7 @@ onts\pk\ljfour\jknappen\ec\dpi600\ecxc2074.pk><D:/Program_files/Programming/LaT
 ex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program_files/Program
 ming/LaTex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Program_files/
 Programming/LaTex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Shih-HaoTseng_Resume.pdf (1 page, 97100 bytes).
+Output written on Shih-HaoTseng_Resume.pdf (1 page, 97098 bytes).
 PDF statistics:
  240 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

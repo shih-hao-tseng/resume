@@ -4,11 +4,11 @@ Database file #1: resume_bib.bib
 banner.message is an unknown function---line 2300 of file resume_bst.bst
  : execute {banner.message
  :                        }
+`intype' is a missing field, not a string, for entry tseng2016random
+while executing---line 2306 of file resume_bst.bst
 `intype' is a missing field, not a string, for entry gushchin2016optimization
 while executing---line 2306 of file resume_bst.bst
 `intype' is a missing field, not a string, for entry tseng2016time
-while executing---line 2306 of file resume_bst.bst
-`intype' is a missing field, not a string, for entry tseng2016random
 while executing---line 2306 of file resume_bst.bst
 completed.message is an unknown function---line 2309 of file resume_bst.bst
  : execute{completed.message
