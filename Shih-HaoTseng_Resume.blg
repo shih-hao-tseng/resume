@@ -2,22 +2,32 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: Shih-HaoTseng_Resume.
 The style file: resume_bst.bst
 field.or.null is an unknown function---line 2542 of file resume_bst.bst
 Database file #1: resume_bib.bib
-banner.message is an unknown function---line 2574 of file resume_bst.bst
+banner.message is an unknown function---line 2578 of file resume_bst.bst
  : execute {banner.message
  :                        }
-Warning--missing year in tsengprep00routing, using 0 for reverse sorting
-`month' is a missing field, not a string, for entry tsengprep00routing
-while executing---line 2579 of file resume_bst.bst
-Warning--missing year in tsengprep01efficient, using 0 for reverse sorting
-`month' is a missing field, not a string, for entry tsengprep01efficient
-while executing---line 2579 of file resume_bst.bst
+You can't pop an empty literal stack for entry tseng2016random
+while executing---line 2583 of file resume_bst.bst
+You can't pop an empty literal stack for entry gushchin2016optimization
+while executing---line 2583 of file resume_bst.bst
+You can't pop an empty literal stack for entry tseng2016time
+while executing---line 2583 of file resume_bst.bst
+Warning--missing year in tsengpreprouting, using 0 for reverse sorting
+`month' is a missing field, not a string, for entry tsengpreprouting
+while executing---line 2583 of file resume_bst.bst
+You can't pop an empty literal stack for entry tsengpreprouting
+while executing---line 2583 of file resume_bst.bst
+Warning--missing year in tsengprepefficient, using 0 for reverse sorting
+`month' is a missing field, not a string, for entry tsengprepefficient
+while executing---line 2583 of file resume_bst.bst
+You can't pop an empty literal stack for entry tsengprepefficient
+while executing---line 2583 of file resume_bst.bst
 `intype' is a missing field, not a string, for entry tseng2016random
-while executing---line 2583 of file resume_bst.bst
+while executing---line 2587 of file resume_bst.bst
 `intype' is a missing field, not a string, for entry gushchin2016optimization
-while executing---line 2583 of file resume_bst.bst
+while executing---line 2587 of file resume_bst.bst
 `intype' is a missing field, not a string, for entry tseng2016time
-while executing---line 2583 of file resume_bst.bst
-completed.message is an unknown function---line 2586 of file resume_bst.bst
+while executing---line 2587 of file resume_bst.bst
+completed.message is an unknown function---line 2590 of file resume_bst.bst
  : execute{completed.message
  :                          }
-(There were 8 error messages)
+(There were 13 error messages)

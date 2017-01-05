@@ -2554,9 +2554,13 @@ FUNCTION {presort}
   %*
 
   % cite key for definitive disambiguation
-  cite$
+  %cite$
   *
 
+  % using the order in the bib file
+  sort.key$
+  *
+  
   % limit to maximum sort key length
   #1 entry.max$ substring$
 
