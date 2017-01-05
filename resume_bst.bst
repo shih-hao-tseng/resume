@@ -1962,7 +1962,7 @@ FUNCTION {inproceedings}
   name.or.dash
   "}{" output
   format.article.title "title" output.warn
-  "}{{\it Proc. " output
+  "}{{\it " output
   format.in.booktitle "booktitle" output.warn
   "}" output
   year empty$
