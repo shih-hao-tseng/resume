@@ -1,15 +1,10 @@
-
 \paper{A.~Gushchin, {\bf S.-H. Tseng}, and A.~Tang}{Optimization-Based Network
   Flow Deadline Scheduling}{{\it Proc. IEEE ICNP}, 2016}
-
 \paper{{\bf S.-H. Tseng}, C.~L. Lim, N.~Wu, and A.~Tang}{Time-Aware
   Congestion-Free Routing Reconfiguration}{{\it Proc. IFIP Networking}, 2016}
-
 \paper{{\bf S.-H. Tseng}, E.~Bitar, and A.~Tang}{Random Convex Approximations
   of Ambiguous Chance Constrained Programs}{{\it Proc. IEEE CDC}, 2016}
-
 \paper{{\bf S.-H. Tseng}, A.~Tang, G.~Choudury, and S.~Tse}{Routing Stability
   in Hybrid Software-Defined Networks}{preparation}
-
 \paper{{\bf S.-H. Tseng} and A.~Tang}{An Efficient Local Search Approach to the
   Witsenhausen Counterexample}{preparation}

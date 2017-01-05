@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.2)  5 JAN 2017 12:14
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.2)  5 JAN 2017 12:33
 entering extended mode
 **Shih-HaoTseng_Resume.tex
 (D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.tex
@@ -187,50 +187,80 @@ Overfull \hbox (0.61905pt too wide) in alignment at lines 40--40
 [][] 
  []
 
+(D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.bbl)
+(D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.bbl)
+(D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.bbl)
+Overfull \hbox (5.99998pt too wide) in alignment at lines 45--45
+[] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 47--47
+[][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 48--48
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 51--51
+[] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 52--52
+[][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 53--53
+[][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 54--54
+[][] 
+ []
+
 
 Overfull \hbox (5.99998pt too wide) in alignment at lines 57--57
 [] 
  []
 
-(D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.bbl)
-(D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.bbl)
-(D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.bbl)
-Overfull \hbox (5.99998pt too wide) in alignment at lines 63--63
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 58--58
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 61--61
 [] 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 65--65
+Overfull \hbox (0.61905pt too wide) in alignment at lines 62--62
 [][] 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 66--66
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 69--69
+Overfull \hbox (5.99998pt too wide) in alignment at lines 65--65
 [] 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 70--70
+Overfull \hbox (2.22165pt too wide) in paragraph at lines 47--68
+[]  
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 69--69
 [][] 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 71--71
-[][] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 72--72
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 75--75
+Overfull \hbox (5.99998pt too wide) in alignment at lines 74--74
 [] 
  []
 
@@ -240,68 +270,33 @@ Overfull \hbox (0.61905pt too wide) in alignment at lines 76--76
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 79--79
+Overfull \hbox (0.61905pt too wide) in alignment at lines 77--77
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 82--82
 [] 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 80--80
+Overfull \hbox (0.61905pt too wide) in alignment at lines 83--83
 [][] 
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 83--83
-[] 
- []
-
-
-Overfull \hbox (2.22165pt too wide) in paragraph at lines 65--86
-[]  
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 87--87
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 92--92
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 94--94
-[][] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 95--95
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 100--100
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 101--101
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 105--105
+Overfull \hbox (5.99998pt too wide) in alignment at lines 87--87
 [] 
  []
 
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.aux) ) 
 Here is how much of TeX's memory you used:
  1069 strings out of 493921
  14200 string characters out of 3140456
- 81794 words of memory out of 3000000
+ 79794 words of memory out of 3000000
  4396 multiletter control sequences out of 15000+200000
  10339 words of font info for 23 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -316,9 +311,9 @@ onts\pk\ljfour\jknappen\ec\dpi600\ecxc2074.pk><D:/Program_files/Programming/LaT
 ex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program_files/Program
 ming/LaTex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Program_files/
 Programming/LaTex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Shih-HaoTseng_Resume.pdf (2 pages, 98737 bytes).
+Output written on Shih-HaoTseng_Resume.pdf (1 page, 97100 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
+ 240 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
