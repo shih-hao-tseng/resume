@@ -1043,6 +1043,23 @@ FUNCTION {longest.label.pass}
 %% FORMAT HANDLERS %%
 %%%%%%%%%%%%%%%%%%%%%
 
+FUNCTION {cv.author}
+{ "S.-H. Tseng" }
+
+FUNCTION {highlight}
+{ duplicate$ empty$
+      { pop$ "" }
+      { "{\bf " swap$ * "}" * }
+  if$
+}
+
+FUNCTION {highlight.if.cv.author}
+{ duplicate$ purify$ cv.author purify$ =
+    { highlight }
+    'skip$
+  if$
+}
+
 %% Lower Level Formats (used by higher level formats)
 
 FUNCTION {format.address.org.or.pub.date}
@@ -1110,6 +1127,7 @@ FUNCTION {format.names}
     { s nameptr
       name.format.string
       format.name$
+	  highlight.if.cv.author
       bibinfo bibinfo.check
       't :=
       nameptr #1 >
