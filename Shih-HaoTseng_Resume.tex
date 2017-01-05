@@ -1,16 +1,6 @@
-\documentclass[a4paper]{article}
-\usepackage[a4paper,margin=1.5cm]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{tabularx}
-\setlength\parindent{0pt}
+\documentclass{article}
 
-\newcolumntype{L}[1]{@{\hspace*{0.5cm}}
-                     >{\raggedright\arraybackslash}p{#1}}
-\newcolumntype{C}[1]{>{\centering  \arraybackslash}p{#1}}
-\newcolumntype{R}[1]{>{\raggedleft \arraybackslash}p{#1}
-                     @{\hspace*{0.1cm}}}
-\arrayrulewidth=1.2pt
-\pagenumbering{gobble}
+\input{resume_format}
 
 \begin{document} 
 \begin{center}
@@ -33,9 +23,8 @@ st688@cornell.edu
 \end{minipage}
 \\[0.1in]
 
+\section{Education}
 \begin{tabularx}{18cm}{L{13cm}R{4cm}}
-\hspace*{-0.5cm}\Large{\textbf{\textsc{Education}}} & \\
-\hline
 {\bf Cornell University (CU)}, Ithaca, NY, U.S.A.
 & Aug. 2013 - Present
 \end{tabularx}\\
@@ -55,18 +44,16 @@ $\bullet$\hspace*{0.2cm} Relevant Coursework: \\
 \hspace*{0.5cm}Algorithm, Data Structure and Programming, Rf Microwave Wireless Systems, Signals and Systems, Advanced Calculus, Macroeconomics, Microeconomics, Probability and Statistics, Quantum Physics.
 \end{tabularx}\\[0.1cm]
 
+\section{Research Interests}
 \begin{tabularx}{18cm}{@{\hspace*{0.5cm}}p{17.5cm}}
-\hspace*{-0.5cm}\Large{\textbf{\textsc{Research Interests}}} \\
-\hline
 {\bf Software-Defined Networking} \\
 $\bullet$\hspace*{0.2cm} Centralized control, congestion-free routing and high-frequency network updating. \\
 {\bf Communication System} \\
 $\bullet$\hspace*{0.2cm} Network dynamic model, optimization theory and algorithm.
 \end{tabularx}\\[0.1cm]
 
+\section{Publications}
 \begin{tabularx}{18cm}{@{\hspace*{0.5cm}}p{17.5cm}}
-\hspace*{-0.5cm}\Large{\textbf{\textsc{Publications}}} \\
-\hline
 {\bf S.-H. Tseng}, E. Bitar, and A. Tang. \\
 ``Random Convex Approximations of Ambiguous Chance Constrained Programs,''
 in {\it Proc. IEEE CDC}, 2016. \\
@@ -84,9 +71,8 @@ in preparation. \\
 in preparation.
 \end{tabularx}\\[0.1cm]
 
+\section{Honors and Awards}
 \begin{tabularx}{18cm}{L{13cm}R{4cm}}
-\hspace*{-0.5cm}\Large{\textbf{\textsc{Honors and Awards}}} \\
-\hline
 {\bf Winner of the AT\&T SDN Network Design Challenge} & 2016 \\
 \multicolumn{2}{@{\hspace*{0.5cm}}p{17.5cm}}{
 $\bullet$\hspace*{0.2cm} Awarded to the top team providing the most efficient and cost effective routing method.} \\
@@ -104,17 +90,15 @@ $\bullet$\hspace*{0.2cm} Awarded to the top 10 teams of Cross-Strait Finals of 2
 %{\bf Freshman Chinese Writing Award (NTU)} & 2009
 \end{tabularx}\\[0.1cm]
 
+\section{Skills}
 \begin{tabularx}{18cm}{@{\hspace*{0.5cm}}p{17.5cm}}
-\hspace*{-0.5cm}\Large{\textbf{\textsc{Skills}}} \\
-\hline
 {\bf Programming Languages:} Proficient in C++, Python and Verilog; working knowledge of ActionScript, C, Basic, HTML, Java, JavaScript, MySQL, and PHP.\\
 {\bf Simulation Tools:} Proficient in PSpice, MATLAB, and NS-3. \\
 {\bf Languages:} Fluent in English; native in Mandarin Chinese and Taiwanese Hokkien; basic understanding of French, German, Spanish, and Japanese.
 \end{tabularx}\\[0.1cm]
 
+\section{Experience}
 \begin{tabularx}{18cm}{L{13cm}R{4cm}}
-\hspace*{-0.5cm}\Large{\textbf{\textsc{Experience}}} \\
-\hline
 {\bf Cornell University}, Ithaca, NY & Aug. 2014  - Present \\
 \end{tabularx}\\
 \begin{tabularx}{18cm}{@{\hspace*{0.5cm}}p{17.5cm}}
@@ -141,9 +125,8 @@ $\bullet$\hspace*{0.2cm} Chief political warfare manager of a company.
 \fi
 
 \iffalse
+\section{Leadership and Activities}
 \begin{tabularx}{18cm}{L{13cm}R{4cm}}
-\hspace*{-0.5cm}\Large{\textbf{\textsc{Leadership and Activities}}} \\
-\hline
 {\bf Cornell Taiwanese Student Association (CTSA)}, Webmaster & May 2014 - Present \\
 {\bf National Experimental High School at Hsinchu Science Park (NEHS) Alumni Association}, Founding Member and Director of Information Division & Oct. 2010 - July 2012 \\
 {\bf NTU Electrical Engineering Summer Camp}, Instructor of Programming Languages and Director of Education & 2009, 2010, 2011 \\

@@ -1,0 +1,27 @@
+%%
+%% resume_format.tex 2017/01/04
+%% 
+%% This is the a style sheet to generate my resume
+%%
+%% Contributors:
+%% Shih-Hao Tseng <st688@cornell.edu>
+%%
+\usepackage[a4paper,margin=1.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\setlength\parindent{0pt}
+
+\newcolumntype{L}[1]{@{\hspace*{0.5cm}}
+                     >{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering  \arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft \arraybackslash}p{#1}
+                     @{\hspace*{0.1cm}}}
+\arrayrulewidth=1.2pt
+\pagenumbering{gobble}
+
+% customise the \section command 
+\renewcommand{\section}[1]{
+\begin{tabularx}{18cm}{L{13cm}R{4cm}}
+\hspace*{-0.5cm}\Large{\textbf{\textsc{#1}}} & \\
+\hline
+\end{tabularx}\\[-1pt] }
