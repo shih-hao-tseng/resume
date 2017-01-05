@@ -1,5 +1,37 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Shih-HaoTseng_Resume.aux
-I found no \citation commands---while reading file Shih-HaoTseng_Resume.aux
-I found no \bibdata command---while reading file Shih-HaoTseng_Resume.aux
-I found no \bibstyle command---while reading file Shih-HaoTseng_Resume.aux
-(There were 3 error messages)
+The style file: resume_bst.bst
+t is already a type "string-global-variable" function name
+---line 2276 of file resume_bst.bst
+ : strings { t
+ :             }
+"}" can't start a style-file command---line 2352 of file resume_bst.bst
+ : 
+ : }
+(Error may have been on previous line)
+field.or.null is an unknown function---line 2422 of file resume_bst.bst
+sort.format.month is an unknown function---line 2423 of file resume_bst.bst
+Illegal, iterate command before read command---line 2432 of file resume_bst.bst
+ : iterate
+ :         {presort}
+Illegal, sort command before read command---line 2434 of file resume_bst.bst
+ : sort
+ :     
+Database file #1: resume_bib.bib
+I was expecting a `,' or a `}'---line 15 of file resume_bib.bib
+ :   
+ :   pages   = {55-63}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+banner.message is an unknown function---line 2444 of file resume_bst.bst
+ : execute {banner.message
+ :                        }
+`intype' is a missing field, not a string, for entry gushchin2016optimization
+while executing---line 2450 of file resume_bst.bst
+`intype' is a missing field, not a string, for entry tseng2016time
+while executing---line 2450 of file resume_bst.bst
+`intype' is a missing field, not a string, for entry tseng2016random
+while executing---line 2450 of file resume_bst.bst
+completed.message is an unknown function---line 2453 of file resume_bst.bst
+ : execute{completed.message
+ :                          }
+(There were 12 error messages)

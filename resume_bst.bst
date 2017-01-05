@@ -1947,13 +1947,26 @@ FUNCTION {inproceedings}
   format.article.title "title" output.warn
   "}{{\it Proc. " output
   format.in.booktitle "booktitle" output.warn
+  "}" output
   year empty$
     { skip$ }
     { ", " output
-	  format.date "year" output.warn
+      year output
 	}
   if$
-  "}}"
+  "}" output
+  fin.entry
+  if.url.std.interword.spacing
+}
+
+FUNCTION {inpreparation}
+{ start.entry
+  if.url.alt.interword.spacing
+  format.authors "author" output.warn
+  name.or.dash
+  "}{" output
+  format.article.title "title" output.warn
+  "}{preparation}" output
   fin.entry
   if.url.std.interword.spacing
 }
