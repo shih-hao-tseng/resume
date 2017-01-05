@@ -49,7 +49,7 @@
 
 \renewcommand{\subsection}[3]{
 \begin{tabularx}{18cm}{L{13cm}R{4cm}}
-{\bf #1}#2 & #3
+{\bf #1}\ifx#2\empty\else, #2\fi & #3
 \end{tabularx}\\ }
 
 \newcommand{\content}[1]{
