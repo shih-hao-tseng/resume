@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.2)  4 JAN 2017 23:04
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.2)  4 JAN 2017 23:37
 entering extended mode
 **Shih-HaoTseng_Resume.tex
 (D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.tex
@@ -138,103 +138,163 @@ LaTeX Font Info:    ... okay on input line 5.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--25
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 26--26
+Overfull \hbox (0.61905pt too wide) in alignment at lines 15--15
 [][] 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 30--30
+Overfull \hbox (0.61905pt too wide) in alignment at lines 16--16
 [][] 
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 35--35
+Overfull \hbox (5.99998pt too wide) in alignment at lines 21--21
 [] 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 39--39
+Overfull \hbox (2.22165pt too wide) in paragraph at lines 15--23
+[]  
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 24--24
 [][] 
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 45--45
+Overfull \hbox (5.99998pt too wide) in alignment at lines 30--30
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--46
+Underfull \hbox (badness 10000) in paragraph at lines 24--31
 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 47--47
+Overfull \hbox (0.61905pt too wide) in alignment at lines 32--32
 [][] 
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 53--53
+Overfull \hbox (5.99998pt too wide) in alignment at lines 38--38
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--54
+Underfull \hbox (badness 10000) in paragraph at lines 32--39
 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 55--55
+Overfull \hbox (0.61905pt too wide) in alignment at lines 40--40
 [][] 
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 72--72
+Overfull \hbox (5.99998pt too wide) in alignment at lines 57--57
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--73
+Underfull \hbox (badness 10000) in paragraph at lines 40--58
 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 74--74
+Overfull \hbox (0.61905pt too wide) in alignment at lines 59--59
 [][] 
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 91--91
+Overfull \hbox (0.61905pt too wide) in alignment at lines 60--60
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--92
-
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 93--93
+Overfull \hbox (5.99998pt too wide) in alignment at lines 64--64
 [][] 
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 98--98
+Overfull \hbox (0.61905pt too wide) in alignment at lines 65--65
+[][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 66--66
+[][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 67--67
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 71--71
+[][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 72--72
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 76--76
+[][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 77--77
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 82--82
+[][] 
+ []
+
+
+Overfull \hbox (2.22165pt too wide) in paragraph at lines 59--84
+[]  
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 85--85
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 90--90
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--99
+Underfull \hbox (badness 10000) in paragraph at lines 85--91
 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 100--100
+Overfull \hbox (0.61905pt too wide) in alignment at lines 92--92
 [][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 95--95
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 100--100
+[] 
  []
 
 
@@ -243,17 +303,7 @@ Overfull \hbox (0.61905pt too wide) in alignment at lines 103--103
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 108--108
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 111--111
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 115--115
+Overfull \hbox (5.99998pt too wide) in alignment at lines 107--107
 [] 
  []
 
@@ -262,10 +312,10 @@ Overfull \hbox (5.99998pt too wide) in alignment at lines 115--115
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (D:\Files\Data\Resume\git_resume\Shih-HaoTseng_Resume.aux) ) 
 Here is how much of TeX's memory you used:
- 1057 strings out of 493921
- 13822 string characters out of 3140456
- 78541 words of memory out of 3000000
- 4391 multiletter control sequences out of 15000+200000
+ 1058 strings out of 493921
+ 13840 string characters out of 3140456
+ 79679 words of memory out of 3000000
+ 4392 multiletter control sequences out of 15000+200000
  10339 words of font info for 23 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  26i,11n,32p,233b,257s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -279,7 +329,7 @@ onts\pk\ljfour\jknappen\ec\dpi600\ecxc2074.pk><D:/Program_files/Programming/LaT
 ex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program_files/Program
 ming/LaTex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Program_files/
 Programming/LaTex/MiKTeX2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Shih-HaoTseng_Resume.pdf (1 page, 97817 bytes).
+Output written on Shih-HaoTseng_Resume.pdf (1 page, 97831 bytes).
 PDF statistics:
  242 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

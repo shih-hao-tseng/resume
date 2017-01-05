@@ -19,9 +19,41 @@
 \arrayrulewidth=1.2pt
 \pagenumbering{gobble}
 
+\renewcommand{\title}[3]{
+\begin{center}
+\huge{\textbf{\textsc{#1}}}
+\\[0.1in]
+\end{center}
+
+\begin{minipage}[t]{0.3\textwidth}
+#2
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\flushright{
+\vfill
+#3
+}
+\end{minipage}
+\\[0.1in]
+
+
+}
+
+
+
 % customise the \section command 
 \renewcommand{\section}[1]{
 \begin{tabularx}{18cm}{L{13cm}R{4cm}}
 \hspace*{-0.5cm}\Large{\textbf{\textsc{#1}}} & \\
 \hline
 \end{tabularx}\\[-1pt] }
+
+\renewcommand{\subsection}[3]{
+\begin{tabularx}{18cm}{L{13cm}R{4cm}}
+{\bf #1}#2 & #3
+\end{tabularx}\\ }
+
+\newcommand{\nondatedsubsection}[2]{
+
+}
