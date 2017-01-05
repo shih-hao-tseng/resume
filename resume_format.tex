@@ -36,8 +36,6 @@
 }
 \end{minipage}
 \\[0.1in]
-
-
 }
 
 
@@ -54,6 +52,9 @@
 {\bf #1}#2 & #3
 \end{tabularx}\\ }
 
-\newcommand{\nondatedsubsection}[2]{
+\newcommand{\content}[1]{
+\begin{tabularx}{18cm}{@{\hspace*{0.5cm}}p{17.5cm}}
+#1
+\end{tabularx}}
 
-}
+\newcommand{\bolditem}[2]{{\bf #1}#2 \\}
