@@ -1976,18 +1976,6 @@ FUNCTION {inproceedings}
   if.url.std.interword.spacing
 }
 
-FUNCTION {inpreparation}
-{ start.entry
-  if.url.alt.interword.spacing
-  format.authors "author" output.warn
-  name.or.dash
-  "}{" output
-  format.article.title "title" output.warn
-  "}{preparation}" output
-  fin.entry
-  if.url.std.interword.spacing
-}
-
 FUNCTION {manual}
 { std.status.using.comma
   start.entry
@@ -2150,15 +2138,13 @@ FUNCTION {techreport}
 }
 
 FUNCTION {unpublished}
-{ std.status.using.comma
-  start.entry
+{ start.entry
   if.url.alt.interword.spacing
   format.authors "author" output.warn
   name.or.dash
+  "}{" output
   format.article.title "title" output.warn
-  format.date output
-  format.note "note" output.warn
-  format.url output
+  "}{preparation}" output
   fin.entry
   if.url.std.interword.spacing
 }
@@ -2289,6 +2275,294 @@ FUNCTION {webpage}{electronic}
 FUNCTION {www}{electronic}
 FUNCTION {default.type}{misc}
 
+
+FUNCTION {sortify}
+{ purify$
+  "l" change.case$
+}
+
+INTEGERS { len }
+
+FUNCTION {chop.word}
+{ 's :=
+  'len :=
+  s #1 len substring$ =
+    { s len #1 + global.max$ substring$ }
+    's
+  if$
+}
+
+FUNCTION {sort.format.names}
+{ 's :=
+  #1 'nameptr :=
+  ""
+  s num.names$ 'numnames :=
+  numnames 'namesleft :=
+    { namesleft #0 > }
+    { nameptr #1 >
+        { "   " * }
+        'skip$
+      if$
+      s nameptr "{vv{ } }{ll{ }}{  ff{ }}{  jj{ }}" format.name$ 't :=
+      nameptr numnames = t "others" = and
+        { "et al" * }
+        { t sortify * }
+      if$
+      nameptr #1 + 'nameptr :=
+      namesleft #1 - 'namesleft :=
+    }
+  while$
+}
+
+FUNCTION {sort.format.month}
+{ 't :=
+  t #1 #3 substring$ "Jan" =
+  t #1 #3 substring$ "jan" =
+  or
+  { "12" }
+    { t #1 #3 substring$ "Feb" =
+      t #1 #3 substring$ "feb" =
+      or
+      { "11" }
+      { t #1 #3 substring$ "Mar" =
+        t #1 #3 substring$ "mar" =
+        or
+        { "10" }
+        { t #1 #3 substring$ "Apr" =
+          t #1 #3 substring$ "apr" =
+          or
+          { "09" }
+          { t #1 #3 substring$ "May" =
+            t #1 #3 substring$ "may" =
+            or
+            { "08" }
+            { t #1 #3 substring$ "Jun" =
+              t #1 #3 substring$ "jun" =
+              or
+              { "07" }
+              { t #1 #3 substring$ "Jul" =
+                t #1 #3 substring$ "jul" =
+                or
+                { "06" }
+                { t #1 #3 substring$ "Aug" =
+                  t #1 #3 substring$ "aug" =
+                  or
+                  { "05" }
+                  { t #1 #3 substring$ "Sep" =
+                    t #1 #3 substring$ "sep" =
+                    or
+                    { "04" }
+                    { t #1 #3 substring$ "Oct" =
+                      t #1 #3 substring$ "oct" =
+                      or
+                      { "03" }
+                      { t #1 #3 substring$ "Nov" =
+                        t #1 #3 substring$ "nov" =
+                        or
+                        { "02" }
+                        { t #1 #3 substring$ "Dec" =
+                          t #1 #3 substring$ "dec" =
+                          or
+                          { "01" }
+                          { "13" } % No month specified
+                        if$
+                        }
+                      if$
+                      }
+                    if$
+                    }
+                  if$
+                  }
+                if$
+                }
+              if$
+              }
+            if$
+            }
+          if$
+          }
+        if$
+        }
+      if$
+      }
+    if$
+    }
+  if$
+ 
+}
+ 
+FUNCTION {sort.format.title}
+{ 't :=
+  "A " #2
+    "An " #3
+      "The " #4 t chop.word
+    chop.word
+  chop.word
+  sortify
+  #1 global.max$ substring$
+}
+
+FUNCTION {year.sort}
+{ year empty$
+    { key empty$
+        { "to sort, need year or key in " cite$ * warning$
+          ""
+        }
+        { key sortify }
+      if$
+    }
+    { year sort.format.names }
+  if$
+}
+
+FUNCTION {author.sort}
+{ author empty$
+    { key empty$
+        { "to sort, need author or key in " cite$ * warning$
+          ""
+        }
+        { key sortify }
+      if$
+    }
+    { author sort.format.names }
+  if$
+}
+
+FUNCTION {author.editor.sort}
+{ author empty$
+    { editor empty$
+        { key empty$
+            { "to sort, need author, editor, or key in " cite$ * warning$
+              ""
+            }
+            { key sortify }
+          if$
+        }
+        { editor sort.format.names }
+      if$
+    }
+    { author sort.format.names }
+  if$
+}
+
+FUNCTION {author.organization.sort}
+{ author empty$
+    { organization empty$
+        { key empty$
+            { "to sort, need author, organization, or key in " cite$ * warning$
+              ""
+            }
+            { key sortify }
+          if$
+        }
+        { "The " #4 organization chop.word sortify }
+      if$
+    }
+    { author sort.format.names }
+  if$
+}
+
+FUNCTION {editor.organization.sort}
+{ editor empty$
+    { organization empty$
+        { key empty$
+            { "to sort, need editor, organization, or key in " cite$ * warning$
+              ""
+            }
+            { key sortify }
+          if$
+        }
+        { "The " #4 organization chop.word sortify }
+      if$
+    }
+    { editor sort.format.names }
+  if$
+}
+
+
+%% Code for reverse sorting
+%% Contributed by Hans Ekkehard Plesser, http://arken.umb.no/~plesser
+
+% Take year, assuming it is four-digit, convert to int, subtract from 9999
+% and return as string on stack. For reverse chronological sorting.
+INTEGERS { pos k res }
+STRINGS { tmpyear }
+FUNCTION {reverse.year}
+{
+ % ensure four digit year
+ year empty$ 
+   { "0000" "missing year in " cite$ * ", using 0 for reverse sorting" * warning$ }  
+   { year text.length$ #4 = 
+       { year }
+       { "0000" "year not 4-digit in " cite$ * ", using 0 for sorting" * warning$ }
+     if$
+   }
+ if$
+ 'tmpyear :=
+
+ #0 'res := % will contain year as integer
+
+ #5 'pos := % index into year, we pre-decrement, will enter body with 4..1
+ { pos #1 - 'pos := pos }
+ { 
+   % extract digit at pos, convert to ASCII, subtract 48 -> 0..9, store in k
+   tmpyear pos #1 substring$ chr.to.int$ #48 - 'k :=
+
+   { k duplicate$ #1 - 'k := }
+   {
+     pos #1 = 
+       { res #1000 + 'res := }
+	{
+	  pos #2 =
+	    { res #100 + 'res := }
+	    {
+	      pos #3 =
+		{ res #10 + 'res := }
+		{ res #1 + 'res := }
+	      if$ 
+	    }
+	  if$
+	}
+     if$
+   }
+   while$
+ }
+ while$
+
+ #9999 res - 
+ int.to.str$
+}
+
+FUNCTION {presort}
+{
+  % sort by reverse year
+  reverse.year
+  "    "
+  *
+  month field.or.null
+  sort.format.month
+  *
+  %" "
+  %*
+  %author field.or.null
+  %sort.format.names
+  %*
+  %"    "
+  %*
+  %title field.or.null
+  %sort.format.title
+  %*
+
+  % cite key for definitive disambiguation
+  cite$
+  *
+
+  % limit to maximum sort key length
+  #1 entry.max$ substring$
+
+  'sort.key$ :=
+}
+
 %%%%%%%%%%%%%%%%%%
 %% MAIN PROGRAM %%
 %%%%%%%%%%%%%%%%%%
@@ -2301,6 +2575,9 @@ EXECUTE {banner.message}
 
 EXECUTE {initialize.longest.label}
 ITERATE {longest.label.pass}
+
+ITERATE {presort}
+SORT 
 
 EXECUTE {begin.bib}
 ITERATE {call.type$}
