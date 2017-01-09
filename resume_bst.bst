@@ -95,7 +95,7 @@ FUNCTION {default.num.names.shown.with.forced.et.al} { #1 }
 FUNCTION {default.is.use.alt.interword.spacing} { #1 }
 
 
-% If alternate interword spacing for entries with URLs is enabled, this is
+% If alternate interword spacing for entries with URLs is enabled2542, this is
 % the interword spacing stretch factor that will be used. For example, the
 % default "4" here means that the interword spacing in entries with URLs can
 % stretch to four times normal. Does not have to be an integer. Note that
@@ -2539,7 +2539,7 @@ FUNCTION {presort}
   reverse.year
   "    "
   *
-  month field.or.null
+  month %field.or.null
   sort.format.month
   *
   %" "
@@ -2575,7 +2575,7 @@ READ
 
 EXECUTE {initialize.controls}
 EXECUTE {initialize.status.constants}
-EXECUTE {banner.message}
+%EXECUTE {banner.message}
 
 EXECUTE {initialize.longest.label}
 ITERATE {longest.label.pass}
