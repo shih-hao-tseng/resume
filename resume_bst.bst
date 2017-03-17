@@ -2149,6 +2149,17 @@ FUNCTION {unpublished}
   if.url.std.interword.spacing
 }
 
+FUNCTION {submitted}
+{ start.entry
+  if.url.alt.interword.spacing
+  format.authors "author" output.warn
+  name.or.dash
+  "}{" output
+  format.article.title "title" output.warn
+  "}{sub}" output
+  fin.entry
+  if.url.std.interword.spacing
+}
 
 % The special entry type which provides the user interface to the
 % BST controls

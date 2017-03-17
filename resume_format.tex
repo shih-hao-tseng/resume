@@ -62,4 +62,8 @@
 \newcommand{\bulletitem}[1]{$\bullet$\hspace*{0.2cm} #1\\ }
 \newcommand{\paper}[3]{#1, \\
 ``#2,''
-in #3. \\}
+\ifnum\pdfstrcmp{#3}{sub}=0
+submitted for review%
+\else
+in #3%
+\fi. \\}
