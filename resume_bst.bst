@@ -2156,7 +2156,7 @@ FUNCTION {submitted}
   name.or.dash
   "}{" output
   format.article.title "title" output.warn
-  "}{sub}" output
+  "}{submitted}" output
   fin.entry
   if.url.std.interword.spacing
 }
