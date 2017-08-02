@@ -1,0 +1,14 @@
+\iffalse
+\subsection{Army, Republic of China Armed Forces}{Taipei, Taiwan}{Aug. 2012  - July 2013}
+\content{
+\position{Chief Counselor, Second Lieutenant}
+\bulletitem{Chief political warfare manager of a company.}
+}\vspace*{0.1cm}
+\fi
+
+\iffalse
+\section{Leadership and Activities}
+\subsection{Cornell Taiwanese Student Association (CTSA)}{Webmaster}{May 2014 - Present}
+\subsection{National Experimental High School at Hsinchu Science Park (NEHS) Alumni Association}{Founding Member and Director of Information Division}{Oct. 2010 - July 2012}
+\subsection{NTU Electrical Engineering Summer Camp}{Instructor of Programming Languages and Director of Education}{2009, 2010, 2011}
+\fi
