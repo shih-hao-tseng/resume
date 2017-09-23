@@ -8,3 +8,5 @@
   Congestion-Free Routing Reconfiguration}{{\it Proc. IFIP Networking}, 2016}
 \paper{{\bf S.-H. Tseng}, A.~Tang, G.~Choudury, and S.~Tse}{Routing Stability
   in Hybrid Software-Defined Networks}{submitted}
+\paper{{\bf S.-H. Tseng}, B.~Bai, and J.~C.~S. Lui}{Hybrid Circuit/Packet
+  Network Scheduling with Multiple Composite Paths}{submitted}
