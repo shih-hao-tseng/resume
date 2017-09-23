@@ -1,0 +1,33 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Shih-HaoTseng_CV.aux
+The style file: resume_bst.bst
+Database file #1: resume_bib.bib
+You can't pop an empty literal stack for entry tseng2017local
+while executing---line 2594 of file resume_bst.bst
+You can't pop an empty literal stack for entry tseng2016random
+while executing---line 2594 of file resume_bst.bst
+You can't pop an empty literal stack for entry gushchin2016optimization
+while executing---line 2594 of file resume_bst.bst
+You can't pop an empty literal stack for entry tseng2016time
+while executing---line 2594 of file resume_bst.bst
+Warning--missing year in tsengsubrouting, using 0 for reverse sorting
+`month' is a missing field, not a string, for entry tsengsubrouting
+while executing---line 2594 of file resume_bst.bst
+You can't pop an empty literal stack for entry tsengsubrouting
+while executing---line 2594 of file resume_bst.bst
+Warning--missing year in tsengsubhybrid, using 0 for reverse sorting
+`month' is a missing field, not a string, for entry tsengsubhybrid
+while executing---line 2594 of file resume_bst.bst
+You can't pop an empty literal stack for entry tsengsubhybrid
+while executing---line 2594 of file resume_bst.bst
+`intype' is a missing field, not a string, for entry tseng2017local
+while executing---line 2598 of file resume_bst.bst
+`intype' is a missing field, not a string, for entry tseng2016random
+while executing---line 2598 of file resume_bst.bst
+`intype' is a missing field, not a string, for entry gushchin2016optimization
+while executing---line 2598 of file resume_bst.bst
+`intype' is a missing field, not a string, for entry tseng2016time
+while executing---line 2598 of file resume_bst.bst
+completed.message is an unknown function---line 2601 of file resume_bst.bst
+ : execute{completed.message
+ :                          }
+(There were 13 error messages)
