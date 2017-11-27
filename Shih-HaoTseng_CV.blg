@@ -1,6 +1,14 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Shih-HaoTseng_CV.aux
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Shih-HaoTseng_CV.aux
 The style file: resume_bst.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: resume_bib.bib
+You can't pop an empty literal stack for entry tseng2018hybrid
+while executing---line 2594 of file resume_bst.bst
 You can't pop an empty literal stack for entry tseng2017local
 while executing---line 2594 of file resume_bst.bst
 You can't pop an empty literal stack for entry tseng2016random
@@ -14,11 +22,8 @@ Warning--missing year in tsengsubrouting, using 0 for reverse sorting
 while executing---line 2594 of file resume_bst.bst
 You can't pop an empty literal stack for entry tsengsubrouting
 while executing---line 2594 of file resume_bst.bst
-Warning--missing year in tsengsubhybrid, using 0 for reverse sorting
-`month' is a missing field, not a string, for entry tsengsubhybrid
-while executing---line 2594 of file resume_bst.bst
-You can't pop an empty literal stack for entry tsengsubhybrid
-while executing---line 2594 of file resume_bst.bst
+`intype' is a missing field, not a string, for entry tseng2018hybrid
+while executing---line 2598 of file resume_bst.bst
 `intype' is a missing field, not a string, for entry tseng2017local
 while executing---line 2598 of file resume_bst.bst
 `intype' is a missing field, not a string, for entry tseng2016random
@@ -30,4 +35,45 @@ while executing---line 2598 of file resume_bst.bst
 completed.message is an unknown function---line 2601 of file resume_bst.bst
  : execute{completed.message
  :                          }
+You've used 6 entries,
+            4630 wiz_defined-function locations,
+            940 strings with 7997 characters,
+and the built_in function-call counts, 3829 in all, are:
+= -- 588
+> -- 82
+< -- 0
++ -- 86
+- -- 151
+* -- 91
+:= -- 568
+add.period$ -- 0
+call.type$ -- 6
+change.case$ -- 0
+chr.to.int$ -- 24
+cite$ -- 1
+duplicate$ -- 234
+empty$ -- 160
+format.name$ -- 25
+if$ -- 872
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 30
+newline$ -- 6
+num.names$ -- 6
+pop$ -- 68
+preamble$ -- 0
+purify$ -- 38
+quote$ -- 0
+skip$ -- 417
+stack$ -- 0
+substring$ -- 128
+swap$ -- 126
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 1
+while$ -- 36
+width$ -- 7
+write$ -- 55
 (There were 13 error messages)
