@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.26)  27 NOV 2017 16:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.26)  31 JAN 2018 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -134,9 +134,173 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 15--15
+(./sections/education.tex
+Overfull \hbox (0.61905pt too wide) in alignment at lines 1--1
 [][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 2--2
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 7--7
+[] 
+ []
+
+
+Overfull \hbox (2.22165pt too wide) in paragraph at lines 1--9
+[]  
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 10--10
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 16--16
+[] 
+ []
+
+)
+Overfull \hbox (2.22165pt too wide) in paragraph at lines 10--16
+[]  
+ []
+
+(./sections/research_interests.tex
+Overfull \hbox (0.61905pt too wide) in alignment at lines 1--1
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 7--7
+[] 
+ []
+
+)
+Overfull \hbox (2.22165pt too wide) in paragraph at lines 1--18
+[]  
+ []
+
+(./sections/publications.tex
+Overfull \hbox (0.61905pt too wide) in alignment at lines 1--1
+[][] 
+ []
+
+(./Shih-HaoTseng_Resume.bbl) (./Shih-HaoTseng_Resume.bbl)
+(./Shih-HaoTseng_Resume.bbl)
+Overfull \hbox (5.99998pt too wide) in alignment at lines 7--7
+[] 
+ []
+
+)
+Overfull \hbox (2.22165pt too wide) in paragraph at lines 1--20
+[]  
+ []
+
+(./sections/experience.tex
+Overfull \hbox (0.61905pt too wide) in alignment at lines 1--1
+[][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 2--2
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 7--7
+[] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 8--8
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 12--12
+[] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 13--13
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 17--17
+[] 
+ []
+
+
+Overfull \hbox (2.22165pt too wide) in paragraph at lines 1--19
+[]  
+ []
+
+) (./sections/skills.tex
+Overfull \hbox (0.61905pt too wide) in alignment at lines 1--1
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 15--15
+[] 
+ []
+
+)
+Overfull \hbox (2.22165pt too wide) in paragraph at lines 1--24
+[]  
+ []
+
+[1
+
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+(./sections/honor_and_awards.tex
+Overfull \hbox (0.61905pt too wide) in alignment at lines 1--1
+[][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 2--2
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 5--5
+[] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 6--6
+[][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 7--7
+[][] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 8--8
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 11--11
+[] 
+ []
+
+
+Overfull \hbox (0.61905pt too wide) in alignment at lines 12--12
+[][] 
+ []
+
+
+Overfull \hbox (5.99998pt too wide) in alignment at lines 15--15
+[] 
  []
 
 
@@ -145,172 +309,29 @@ Overfull \hbox (0.61905pt too wide) in alignment at lines 16--16
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 21--21
+Overfull \hbox (5.99998pt too wide) in alignment at lines 19--19
 [] 
  []
 
-
-Overfull \hbox (2.22165pt too wide) in paragraph at lines 15--23
-[]  
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 24--24
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 30--30
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 32--32
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 38--38
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 40--40
-[][] 
- []
-
-(./Shih-HaoTseng_Resume.bbl) (./Shih-HaoTseng_Resume.bbl)
-(./Shih-HaoTseng_Resume.bbl)
-Overfull \hbox (5.99998pt too wide) in alignment at lines 46--46
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 48--48
-[][] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 49--49
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 54--54
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 55--55
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 59--59
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 60--60
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 64--64
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 66--66
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 71--71
-[] 
- []
-
-[1
-
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (0.61905pt too wide) in alignment at lines 75--75
-[][] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 76--76
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 79--79
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 80--80
-[][] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 81--81
-[][] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 82--82
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 85--85
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 86--86
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 89--89
-[] 
- []
-
-
-Overfull \hbox (0.61905pt too wide) in alignment at lines 90--90
-[][] 
- []
-
-
-Overfull \hbox (5.99998pt too wide) in alignment at lines 93--93
-[] 
- []
-
-
-Overfull \hbox (2.22165pt too wide) in paragraph at lines 75--96
-[]  
- []
-
-[2] (./Shih-HaoTseng_Resume.aux) ) 
+) [2] (./Shih-HaoTseng_Resume.aux) ) 
 Here is how much of TeX's memory you used:
- 1061 strings out of 493046
- 13186 string characters out of 6137253
- 81861 words of memory out of 5000000
- 4640 multiletter control sequences out of 15000+600000
+ 1083 strings out of 493046
+ 13605 string characters out of 6137253
+ 82884 words of memory out of 5000000
+ 4643 multiletter control sequences out of 15000+600000
  10339 words of font info for 23 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 26i,11n,32p,233b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvip
-s/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/cm-super/sfxc2074.pfb>
-Output written on Shih-HaoTseng_Resume.pdf (2 pages, 125267 bytes).
+ 26i,11n,32p,266b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dv
+ips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/cm-super/sfxc2074.pfb>
+Output written on Shih-HaoTseng_Resume.pdf (2 pages, 125356 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream

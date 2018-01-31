@@ -38,8 +38,6 @@
 \\[0.1in]
 }
 
-
-
 % customise the \section command 
 \renewcommand{\section}[1]{
 \vspace*{1ex}
@@ -68,3 +66,10 @@ submitted for review%
 \else
 in #3%
 \fi. \\}
+
+\makeatletter
+\def\input@path{{sections/}}
+\makeatother
+
+% show detailed information
+\newif\ifdetail
