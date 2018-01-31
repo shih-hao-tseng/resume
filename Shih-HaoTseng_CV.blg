@@ -37,7 +37,7 @@ completed.message is an unknown function---line 2601 of file resume_bst.bst
  :                          }
 You've used 6 entries,
             4630 wiz_defined-function locations,
-            940 strings with 7997 characters,
+            940 strings with 7998 characters,
 and the built_in function-call counts, 3829 in all, are:
 = -- 588
 > -- 82
