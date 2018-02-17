@@ -67,6 +67,26 @@ submitted for review%
 in #3%
 \fi. \\}
 
+
+% parameters:
+% #1: name
+% #2: title
+% #3: organization
+% #4: phone number
+% #5: email
+% #6: relationship
+\newcommand{\reference}[6]{%
+\begin{tabularx}{18cm}{L{10cm}L{7cm}}
+{\bf #1} & {\it Relationship: #6}
+\end{tabularx}\\
+\content{
+#2\\ % #2: title
+#3\\ % #3: organization
+#4\\ % #4: phone number
+#5   % #5: email
+}\vspace*{0.5cm}%
+}
+
 \makeatletter
 \def\input@path{{sections/}}
 \makeatother
