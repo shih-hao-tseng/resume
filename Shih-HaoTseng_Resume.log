@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.26)  31 JAN 2018 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.26)  16 FEB 2018 22:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -211,32 +211,32 @@ Overfull \hbox (0.61905pt too wide) in alignment at lines 2--2
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 7--7
+Overfull \hbox (5.99998pt too wide) in alignment at lines 8--8
 [] 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 8--8
+Overfull \hbox (0.61905pt too wide) in alignment at lines 9--9
 [][] 
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 12--12
+Overfull \hbox (5.99998pt too wide) in alignment at lines 13--13
 [] 
  []
 
 
-Overfull \hbox (0.61905pt too wide) in alignment at lines 13--13
+Overfull \hbox (0.61905pt too wide) in alignment at lines 14--14
 [][] 
  []
 
 
-Overfull \hbox (5.99998pt too wide) in alignment at lines 17--17
+Overfull \hbox (5.99998pt too wide) in alignment at lines 18--18
 [] 
  []
 
 
-Overfull \hbox (2.22165pt too wide) in paragraph at lines 1--19
+Overfull \hbox (2.22165pt too wide) in paragraph at lines 1--20
 []  
  []
 
@@ -331,7 +331,7 @@ y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb
 share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/cm-super/sfxc2074.pfb>
-Output written on Shih-HaoTseng_Resume.pdf (2 pages, 125292 bytes).
+Output written on Shih-HaoTseng_Resume.pdf (2 pages, 125532 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
