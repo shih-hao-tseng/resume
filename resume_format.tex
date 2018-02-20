@@ -9,6 +9,7 @@
 \usepackage[a4paper,margin=1.5cm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{tabularx}
+\usepackage{multirow}
 \setlength\parindent{0pt}
 
 \newcolumntype{L}[1]{@{\hspace*{0.5cm}}
@@ -77,14 +78,12 @@ in #3%
 % #6: relationship
 \newcommand{\reference}[6]{%
 \begin{tabularx}{18cm}{L{10cm}L{7cm}}
-{\bf #1} & {\it Relationship: #6}
-\end{tabularx}\\
-\content{
-#2\\ % #2: title
-#3\\ % #3: organization
-#4\\ % #4: phone number
-#5   % #5: email
-}\vspace*{0.5cm}%
+{\bf #1} & \multirow[t]{5}{7cm}{\it Relationship: #6} \\
+#2 & \\ % #2: title
+#3 & \\ % #3: organization
+#4 & \\ % #4: phone number
+#5 &  % #5: email
+\end{tabularx}\vspace*{0.5cm}%
 }
 
 \makeatletter

@@ -1,0 +1,9 @@
+*.aux
+*.bbl
+*.blg
+*.log
+*.gz
+
+Shih-HaoTseng_ReferenceList*
+sections/reference_list.tex
+
