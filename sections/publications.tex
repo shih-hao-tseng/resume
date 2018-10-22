@@ -1,7 +1,20 @@
-\section{Publications}
+\section{\ifdetail\else Selected \fi Publications}
 \content{
-%\bolditem{Summary:}{4 first author; 1 co-author; 1 first author manuscript under review.}
+%\bolditem{Summary:}{ first author;  co-author;  first author manuscript under review.}
+\ifdetail%
 \nocite{*}
+\else%
+\nocite{%
+tseng2018coflow,%
+tseng2018hybrid,%
+tseng2017local,%
+tseng2016random,%
+gushchin2016optimization,%
+tseng2016time,%
+tsengsubrouting,%
+tsengpreppushing%
+}%
+\fi%
 \bibliographystyle{resume_bst}
 \bibliography{resume_bib}
 }
