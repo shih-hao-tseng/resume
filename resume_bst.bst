@@ -2331,75 +2331,74 @@ FUNCTION {sort.format.month}
   t #1 #3 substring$ "jan" =
   or
   { "12" }
-    { t #1 #3 substring$ "Feb" =
-      t #1 #3 substring$ "feb" =
+  { t #1 #3 substring$ "Feb" =
+    t #1 #3 substring$ "feb" =
+    or
+    { "11" }
+    { t #1 #3 substring$ "Mar" =
+      t #1 #3 substring$ "mar" =
       or
-      { "11" }
-      { t #1 #3 substring$ "Mar" =
-        t #1 #3 substring$ "mar" =
+      { "10" }
+      { t #1 #3 substring$ "Apr" =
+        t #1 #3 substring$ "apr" =
         or
-        { "10" }
-        { t #1 #3 substring$ "Apr" =
-          t #1 #3 substring$ "apr" =
+        { "09" }
+        { t #1 #3 substring$ "May" =
+          t #1 #3 substring$ "may" =
           or
-          { "09" }
-          { t #1 #3 substring$ "May" =
-            t #1 #3 substring$ "may" =
+          { "08" }
+          { t #1 #3 substring$ "Jun" =
+            t #1 #3 substring$ "jun" =
             or
-            { "08" }
-            { t #1 #3 substring$ "Jun" =
-              t #1 #3 substring$ "jun" =
+            { "07" }
+            { t #1 #3 substring$ "Jul" =
+              t #1 #3 substring$ "jul" =
               or
-              { "07" }
-              { t #1 #3 substring$ "Jul" =
-                t #1 #3 substring$ "jul" =
+              { "06" }
+              { t #1 #3 substring$ "Aug" =
+                t #1 #3 substring$ "aug" =
                 or
-                { "06" }
-                { t #1 #3 substring$ "Aug" =
-                  t #1 #3 substring$ "aug" =
+                { "05" }
+                { t #1 #3 substring$ "Sep" =
+                  t #1 #3 substring$ "sep" =
                   or
-                  { "05" }
-                  { t #1 #3 substring$ "Sep" =
-                    t #1 #3 substring$ "sep" =
+                  { "04" }
+                  { t #1 #3 substring$ "Oct" =
+                    t #1 #3 substring$ "oct" =
                     or
-                    { "04" }
-                    { t #1 #3 substring$ "Oct" =
-                      t #1 #3 substring$ "oct" =
+                    { "03" }
+                    { t #1 #3 substring$ "Nov" =
+                      t #1 #3 substring$ "nov" =
                       or
-                      { "03" }
-                      { t #1 #3 substring$ "Nov" =
-                        t #1 #3 substring$ "nov" =
+                      { "02" }
+                      { t #1 #3 substring$ "Dec" =
+                        t #1 #3 substring$ "dec" =
                         or
-                        { "02" }
-                        { t #1 #3 substring$ "Dec" =
-                          t #1 #3 substring$ "dec" =
-                          or
-                          { "01" }
-                          { "13" } % No month specified
+                        { "01" }
+                        { "13" } % No month specified
                         if$
-                        }
-                      if$
                       }
-                    if$
+                      if$
                     }
-                  if$
+                    if$
                   }
-                if$
+                  if$
                 }
-              if$
+                if$
               }
-            if$
+              if$
             }
-          if$
+            if$
           }
-        if$
+          if$
         }
-      if$
+        if$
       }
-    if$
+      if$
     }
+    if$
+  }
   if$
- 
 }
  
 FUNCTION {sort.format.title}
