@@ -830,20 +830,23 @@ FUNCTION {n.dashify}
 % This function detects entries with names that are identical to that of
 % the previous entry and replaces the repeated names with dashes (if the
 % "is.dash.repeated.names" user control is nonzero).
+% Shih-Hao: always showing names
 FUNCTION {name.or.dash}
-{ 's :=
-   oldname empty$
-     { s 'oldname := s }
-     { s oldname =
-         { is.dash.repeated.names
-              { repeated.name.dashes }
-              { s 'oldname := s }
-            if$
-         }
-         { s 'oldname := s }
-       if$
-     }
-   if$
+{ 
+  's := s 'oldname := s
+  %'s :=
+  % oldname empty$
+  %   { s 'oldname := s }
+  %   { s oldname =
+  %       { is.dash.repeated.names
+  %            { repeated.name.dashes }
+  %            { s 'oldname := s }
+  %          if$
+  %       }
+  %       { s 'oldname := s }
+  %     if$
+  %   }
+  % if$
 }
 
 % Converts the number string on the top of the stack to
@@ -969,6 +972,11 @@ FUNCTION {convert.edition}
 
 FUNCTION {start.entry}
 { "\paper{"
+  initialize.prev.this.status
+}
+
+FUNCTION {start.entry.journal}
+{ "\journal{"
   initialize.prev.this.status
 }
 
@@ -1292,8 +1300,12 @@ FUNCTION {format.in.booktitle}
     { this.to.prev.status
       this.status.std
       select.language
-      intype " " *
-      swap$ *
+      %intype missing$
+      %  {  }
+      %  { intype " " * 
+      %    swap$ *
+      %  }
+      %if$
       cap.status.std
     }
   if$
@@ -1835,23 +1847,44 @@ FUNCTION {format.url}
 % Note: In many journals, the IEEE (or the authors) tend not to show the number
 % for articles, so the display of the number is controlled here by the
 % switch "is.use.number.for.article"
+%FUNCTION {article}
+%{ std.status.using.comma
+%  start.entry
+%  if.url.alt.interword.spacing
+%  format.authors "author" output.warn
+%  name.or.dash
+%  format.article.title "title" output.warn
+%  format.journal "journal" bibinfo.check "journal" output.warn
+%  format.volume output
+%  format.number.if.use.for.article output
+%  format.pages output
+%  format.date "year" output.warn
+%  format.note output
+%  format.url output
+%  fin.entry
+%  if.url.std.interword.spacing
+%}
+
 FUNCTION {article}
-{ std.status.using.comma
-  start.entry
+{ start.entry.journal
   if.url.alt.interword.spacing
   format.authors "author" output.warn
   name.or.dash
+  "}{" output
   format.article.title "title" output.warn
-  format.journal "journal" bibinfo.check "journal" output.warn
-  format.volume output
-  format.number.if.use.for.article output
-  format.pages output
-  format.date "year" output.warn
-  format.note output
-  format.url output
+  "}{" output
+  format.journal "journal" output.warn
+  year empty$
+    { skip$ }
+    { ", " output
+      year output
+	  }
+  if$
+  "}" output
   fin.entry
   if.url.std.interword.spacing
 }
+
 
 FUNCTION {book}
 { std.status.using.comma
@@ -1969,7 +2002,7 @@ FUNCTION {inproceedings}
     { skip$ }
     { ", " output
       year output
-	}
+	  }
   if$
   "}" output
   fin.entry
@@ -2546,12 +2579,24 @@ FUNCTION {reverse.year}
 FUNCTION {presort}
 {
   % sort by reverse year
-  reverse.year
-  "    "
-  *
-  month %field.or.null
-  sort.format.month
-  *
+  year missing$
+    { 
+      "9999    "
+    }
+    {
+      reverse.year
+      "    "
+      *
+    }
+  if$
+  month missing$
+    {}
+    {
+      month %field.or.null
+      sort.format.month
+      *
+    }
+  if$
   %" "
   %*
   %author field.or.null
@@ -2565,7 +2610,7 @@ FUNCTION {presort}
 
   % cite key for definitive disambiguation
   %cite$
-  *
+  %*
 
   % using the order in the bib file
   sort.key$
@@ -2597,7 +2642,7 @@ EXECUTE {begin.bib}
 ITERATE {call.type$}
 EXECUTE {end.bib}
 
-EXECUTE{completed.message}
+%EXECUTE{completed.message}
 
 
 %% That's all folks, mds.
