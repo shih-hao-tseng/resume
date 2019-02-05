@@ -10,6 +10,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \usepackage{multirow}
+\usepackage{hyperref}
+\urlstyle{same}
 \setlength\parindent{0pt}
 
 \newcolumntype{L}[1]{@{\hspace*{0.5cm}}
@@ -31,10 +33,10 @@
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.3\textwidth}
-\flushright{
-\vfill
+\flushright{%
+%\vfill
 #3
-}
+}%
 \end{minipage}
 \\[0.1in]
 }
