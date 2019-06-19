@@ -10,6 +10,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \usepackage{multirow}
+\usepackage{hyperref}
+\urlstyle{same}
 \setlength\parindent{0pt}
 
 \newcolumntype{L}[1]{@{\hspace*{0.5cm}}
@@ -26,15 +28,15 @@
 \\[0.1in]
 \end{center}
 
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.35\textwidth}
 #2
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.3\textwidth}
-\flushright{
-\vfill
+\begin{minipage}[t]{0.35\textwidth}
+\flushright{%
+%\vfill
 #3
-}
+}%
 \end{minipage}
 \\[0.1in]
 }
@@ -71,6 +73,9 @@ submitted for review%
 in #3%
 \fi%
 \fi. \\}
+\newcommand{\journal}[3]{#1, \\
+``#2,''
+in #3.\\}
 
 
 % parameters:
