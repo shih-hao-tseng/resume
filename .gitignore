@@ -3,6 +3,7 @@
 *.blg
 *.log
 *.gz
+*.out
 
 Shih-HaoTseng_ReferenceList.pdf
 sections/reference_list.tex

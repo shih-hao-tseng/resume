@@ -1928,21 +1928,7 @@ FUNCTION {booklet}
 }
 
 FUNCTION {electronic}
-{ std.status.using.period
-  start.entry
-  if.url.alt.interword.spacing
-  format.authors output
-  name.or.dash
-  format.date.electronic output
-  format.article.title.electronic output
-  format.howpublished "howpublished" bibinfo.check output
-  format.organization "organization" bibinfo.check output
-  format.address "address" bibinfo.check output
-  format.note output
-  format.url output
-  fin.entry
-  empty.entry.warn
-  if.url.std.interword.spacing
+{ 
 }
 
 FUNCTION {inbook}
