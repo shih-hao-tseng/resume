@@ -2566,8 +2566,17 @@ FUNCTION {presort}
 {
   % sort by reverse year
   year missing$
-    { 
-      "9999    "
+    {
+      type$ "submitted" = 
+      {
+        % is submitted
+        "0000    "
+      }
+      {
+        % is in preparation
+        "9999    "
+      }
+      if$
     }
     {
       reverse.year
