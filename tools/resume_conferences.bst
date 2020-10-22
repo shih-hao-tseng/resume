@@ -1,10 +1,10 @@
 %%
-%% resume_bst.bst
+%% resume_conferences.bst
 %%
 %% Modified from IEEEtran.bst for personal uses
-%% 2017/1/15
+%% 2020/10/21
 %%
-%% Shih-Hao Tseng <st688@cornell.edu>
+%% Shih-Hao Tseng <shtseng@caltech.edu>
 %% 
 %%*************************************************************************
 %% Legal Notice:
@@ -971,12 +971,8 @@ FUNCTION {convert.edition}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 FUNCTION {start.entry}
-{ "\paper{"
-  initialize.prev.this.status
-}
-
-FUNCTION {start.entry.journal}
-{ "\journal{"
+{ 
+  "\item \paper{"
   initialize.prev.this.status
 }
 
@@ -988,10 +984,12 @@ FUNCTION {start.entry.journal}
 % the other gurus on comp.text.tex for their help and advice on the topic of
 % \selectlanguage, Babel and BibTeX.
 FUNCTION {begin.bib}
-{ }
+{ "\vspace*{-0.75\baselineskip}\setlist{nolistsep}" write$ newline$
+  "\begin{enumerate}[label={[c\arabic*]},noitemsep]" write$ newline$
+  "\setcounter{enumi}{0}" write$ newline$ }
 
 FUNCTION {end.bib}
-{ }
+{ "\end{enumerate}" write$ newline$ }
 
 FUNCTION {if.url.alt.interword.spacing}
 { is.use.alt.interword.spacing
@@ -1866,66 +1864,15 @@ FUNCTION {format.url}
 %}
 
 FUNCTION {article}
-{ start.entry.journal
-  if.url.alt.interword.spacing
-  format.authors "author" output.warn
-  name.or.dash
-  "}{" output
-  format.article.title "title" output.warn
-  "}{" output
-  format.journal "journal" output.warn
-  year empty$
-    { skip$ }
-    { ", " output
-      year output
-	  }
-  if$
-  "}" output
-  fin.entry
-  if.url.std.interword.spacing
+{
 }
 
 
 FUNCTION {book}
-{ std.status.using.comma
-  start.entry
-  if.url.alt.interword.spacing
-  author empty$
-    { format.editors "author and editor" output.warn }
-    { format.authors output.nonnull }
-  if$
-  name.or.dash
-  format.book.title.edition output
-  format.series output
-  author empty$
-    { skip$ }
-    { format.editors output }
-  if$
-  format.address.publisher.date output
-  format.volume output
-  format.number output
-  format.note output
-  format.url output
-  fin.entry
-  if.url.std.interword.spacing
-}
+{}
 
 FUNCTION {booklet}
-{ std.status.using.comma
-  start.entry
-  if.url.alt.interword.spacing
-  format.authors output
-  name.or.dash
-  format.article.title "title" output.warn
-  format.howpublished "howpublished" bibinfo.check output
-  format.organization "organization" bibinfo.check output
-  format.address "address" bibinfo.check output
-  format.date output
-  format.note output
-  format.url output
-  fin.entry
-  if.url.std.interword.spacing
-}
+{}
 
 FUNCTION {electronic}
 { 
@@ -2169,15 +2116,21 @@ FUNCTION {unpublished}
 }
 
 FUNCTION {submitted}
-{ start.entry
-  if.url.alt.interword.spacing
-  format.authors "author" output.warn
-  name.or.dash
-  "}{" output
-  format.article.title "title" output.warn
-  "}{submitted}" output
-  fin.entry
-  if.url.std.interword.spacing
+{ 
+  booktitle missing$
+    {}
+    {
+      start.entry
+      if.url.alt.interword.spacing
+      format.authors "author" output.warn
+      name.or.dash
+      "}{" output
+      format.article.title "title" output.warn
+      "}{submitted to " * booktitle * "}" output
+      fin.entry
+      if.url.std.interword.spacing
+    }
+  if$
 }
 
 % The special entry type which provides the user interface to the

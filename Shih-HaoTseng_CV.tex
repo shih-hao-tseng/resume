@@ -1,6 +1,11 @@
 \documentclass{article}
 
-\input{resume_format}
+\input{tools/resume_format}
+
+\usepackage{multibib}
+\usepackage{enumitem}
+\newcites{books}{References}
+\newcites{conferences}{References}
 
 \detailtrue
 
@@ -19,6 +24,10 @@
 
 \newpage
 
-\input{publications}
+\input{publication_books}
+
+\input{publication_journals}
+
+\input{publication_conferences}
 
 \end{document}
