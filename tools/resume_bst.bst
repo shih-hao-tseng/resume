@@ -971,12 +971,12 @@ FUNCTION {convert.edition}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 FUNCTION {start.entry}
-{ "\paper{"
+{ "\hangindent=1.5em$\bullet$\quad\paper{"
   initialize.prev.this.status
 }
 
 FUNCTION {start.entry.journal}
-{ "\journal{"
+{ "\hangindent=1.5em$\bullet$\quad\journal{"
   initialize.prev.this.status
 }
 
