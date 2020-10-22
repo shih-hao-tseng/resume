@@ -2116,7 +2116,9 @@ FUNCTION {submitted}
       name.or.dash
       "}{" output
       format.article.title "title" output.warn
-      "}{submission to \emph{" * journal * "}}" output
+      "}{submission to \emph{" output
+      journal output
+      "}}" output
       fin.entry
       if.url.std.interword.spacing
     }
