@@ -5,6 +5,7 @@ CV:
 	rm -f books.bbl journals.bbl conferences.bbl
 	pdflatex Shih-HaoTseng_CV.tex
 	bibtex books
+	bibtex journals
 	bibtex conferences
 	pdflatex Shih-HaoTseng_CV.tex
 	pdflatex Shih-HaoTseng_CV.tex
