@@ -10,3 +10,10 @@ CV:
 	pdflatex Shih-HaoTseng_CV.tex
 	pdflatex Shih-HaoTseng_CV.tex
 	make clean
+
+resume:
+	pdflatex Shih-HaoTseng_Resume.tex
+	pdflatex Shih-HaoTseng_Resume.tex
+	bibtex Shih-HaoTseng_Resume
+	pdflatex Shih-HaoTseng_Resume.tex
+	make clean
