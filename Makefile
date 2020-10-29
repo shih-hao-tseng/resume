@@ -17,3 +17,13 @@ resume:
 	bibtex Shih-HaoTseng_Resume
 	pdflatex Shih-HaoTseng_Resume.tex
 	make clean
+
+patent:
+	pdflatex Shih-HaoTseng_Patent_PublicationList.tex
+	pdflatex Shih-HaoTseng_Patent_PublicationList.tex
+	bibtex patents
+	bibtex books
+	bibtex journals
+	bibtex conferences
+	pdflatex Shih-HaoTseng_Patent_PublicationList.tex
+	make clean

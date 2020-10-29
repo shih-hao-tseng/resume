@@ -1,5 +1,5 @@
 %%
-%% resume_conferences.bst
+%% resume_books.bst
 %%
 %% Modified from IEEEtran.bst for personal uses
 %% 2020/10/21
@@ -183,18 +183,18 @@ FUNCTION {repeated.name.dashes} { "------" }
 %% PREDEFINED STRING MACROS %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-MACRO {jan} {"Jan."}
-MACRO {feb} {"Feb."}
-MACRO {mar} {"Mar."}
-MACRO {apr} {"Apr."}
+MACRO {jan} {"January"}
+MACRO {feb} {"February"}
+MACRO {mar} {"March"}
+MACRO {apr} {"April"}
 MACRO {may} {"May"}
-MACRO {jun} {"Jun."}
-MACRO {jul} {"Jul."}
-MACRO {aug} {"Aug."}
-MACRO {sep} {"Sep."}
-MACRO {oct} {"Oct."}
-MACRO {nov} {"Nov."}
-MACRO {dec} {"Dec."}
+MACRO {jun} {"June"}
+MACRO {jul} {"July"}
+MACRO {aug} {"August"}
+MACRO {sep} {"September"}
+MACRO {oct} {"October"}
+MACRO {nov} {"November"}
+MACRO {dec} {"December"}
 
 
 
@@ -767,7 +767,7 @@ FUNCTION {large.number.trigger}{ #5 }
 FUNCTION {large.number.blocksize}{ #3 }
 
 % What is actually inserted between the number groups.
-FUNCTION {large.number.separator}{ "\," }
+FUNCTION {large.number.separator}{ "," }
 
 % So as to save on integer variables by reusing existing ones, numnames
 % holds the current number of consecutive digits read and nameptr holds
@@ -972,7 +972,7 @@ FUNCTION {convert.edition}
 
 FUNCTION {start.entry}
 { 
-  "\item \paper{"
+  "\item \patent{"
   initialize.prev.this.status
 }
 
@@ -985,7 +985,7 @@ FUNCTION {start.entry}
 % \selectlanguage, Babel and BibTeX.
 FUNCTION {begin.bib}
 { "\vspace*{-0.75\baselineskip}\setlist{nolistsep}" write$ newline$
-  "\begin{enumerate}[label={[c\arabic*]},noitemsep]" write$ newline$
+  "\begin{enumerate}[label={[p\arabic*]},noitemsep]" write$ newline$
   "\setcounter{enumi}{0}" write$ newline$ }
 
 FUNCTION {end.bib}
@@ -1845,28 +1845,36 @@ FUNCTION {format.url}
 % Note: In many journals, the IEEE (or the authors) tend not to show the number
 % for articles, so the display of the number is controlled here by the
 % switch "is.use.number.for.article"
-%FUNCTION {article}
-%{ std.status.using.comma
-%  start.entry
-%  if.url.alt.interword.spacing
-%  format.authors "author" output.warn
-%  name.or.dash
-%  format.article.title "title" output.warn
-%  format.journal "journal" bibinfo.check "journal" output.warn
-%  format.volume output
-%  format.number.if.use.for.article output
-%  format.pages output
-%  format.date "year" output.warn
-%  format.note output
-%  format.url output
-%  fin.entry
-%  if.url.std.interword.spacing
-%}
 
 FUNCTION {article}
 {
 }
 
+
+%FUNCTION {book}
+%{
+%  std.status.using.comma
+%  start.entry
+%  if.url.alt.interword.spacing
+%  author empty$
+%    { format.editors "author and editor" output.warn }
+%    { format.authors output.nonnull }
+%  if$
+%  name.or.dash
+%  format.book.title.edition output
+%  format.series output
+%  author empty$
+%    { skip$ }
+%    { format.editors output }
+%  if$
+%  format.address.publisher.date output
+%  format.volume output
+%  format.number output
+%  format.note output
+%  format.url output
+%  fin.entry
+%  if.url.std.interword.spacing
+%}
 
 FUNCTION {book}
 {}
@@ -1922,25 +1930,7 @@ FUNCTION {incollection}
 }
 
 FUNCTION {inproceedings}
-{ start.entry
-  if.url.alt.interword.spacing
-  format.authors "author" output.warn
-  name.or.dash
-  "}{" output
-  format.article.title "title" output.warn
-  "}{{\it " output
-  format.in.booktitle "booktitle" output.warn
-  "}" output
-  year empty$
-    { skip$ }
-    { ", " output
-      year output
-	  }
-  if$
-  "}" output
-  fin.entry
-  if.url.std.interword.spacing
-}
+{}
 
 FUNCTION {manual}
 { std.status.using.comma
@@ -1995,8 +1985,33 @@ FUNCTION {misc}
   if.url.std.interword.spacing
 }
 
+%FUNCTION {patent}
+%{ std.status.using.comma
+%  start.entry
+%  if.url.alt.interword.spacing
+%  format.authors output
+%  name.or.dash
+%  format.article.title output
+%  format.patent.nationality.type.number output
+%  format.patent.date output
+%  format.note output
+%  format.url output
+%  fin.entry
+%  empty.entry.warn
+%  if.url.std.interword.spacing
+%}
+
 FUNCTION {patent}
-{
+{ start.entry
+  if.url.alt.interword.spacing
+  format.patent.nationality.type.number output
+  "}{" output
+  format.article.title "title" output.warn
+  "}{" output
+  format.patent.date output
+  "}" output
+  fin.entry
+  if.url.std.interword.spacing
 }
 
 FUNCTION {periodical}
@@ -2074,51 +2089,15 @@ FUNCTION {standard}
 }
 
 FUNCTION {techreport}
-{ std.status.using.comma
-  start.entry
-  if.url.alt.interword.spacing
-  format.authors "author" output.warn
-  name.or.dash
-  format.article.title "title" output.warn
-  format.howpublished "howpublished" bibinfo.check output 
-  format.institution "institution" bibinfo.warn output
-  format.address "address" bibinfo.check output
-  format.tech.report.number output.nonnull
-  format.date "year" output.warn
-  format.note output
-  format.url output
-  fin.entry
-  if.url.std.interword.spacing
+{
 }
 
 FUNCTION {unpublished}
-{ start.entry
-  if.url.alt.interword.spacing
-  format.authors "author" output.warn
-  name.or.dash
-  "}{" output
-  format.article.title "title" output.warn
-  "}{preparation}" output
-  fin.entry
-  if.url.std.interword.spacing
+{
 }
 
 FUNCTION {submitted}
-{ 
-  booktitle missing$
-    {}
-    {
-      start.entry
-      if.url.alt.interword.spacing
-      format.authors "author" output.warn
-      name.or.dash
-      "}{" output
-      format.article.title "title" output.warn
-      "}{submitted to " * booktitle * "}" output
-      fin.entry
-      if.url.std.interword.spacing
-    }
-  if$
+{
 }
 
 % The special entry type which provides the user interface to the

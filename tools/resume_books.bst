@@ -1995,19 +1995,7 @@ FUNCTION {misc}
 }
 
 FUNCTION {patent}
-{ std.status.using.comma
-  start.entry
-  if.url.alt.interword.spacing
-  format.authors output
-  name.or.dash
-  format.article.title output
-  format.patent.nationality.type.number output
-  format.patent.date output
-  format.note output
-  format.url output
-  fin.entry
-  empty.entry.warn
-  if.url.std.interword.spacing
+{
 }
 
 FUNCTION {periodical}
