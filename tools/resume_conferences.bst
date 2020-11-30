@@ -121,7 +121,7 @@ FUNCTION {default.name.latex.cmd}{ "" }
 
 
 % The default URL prefix.
-FUNCTION {default.name.url.prefix}{ "[Online]. Available:" }
+FUNCTION {default.name.url.prefix}{ "[Online] Available: " }
 
 
 % Other controls that cannot be accessed via IEEEtranBSTCTL entry type.
@@ -248,6 +248,8 @@ ENTRY
     CTLname_format_string
     CTLname_latex_cmd
     CTLname_url_prefix
+    archivePrefix
+    eprint
   }
   {}
   { label }
@@ -2114,7 +2116,14 @@ FUNCTION {submitted}
       name.or.dash
       "}{" output
       format.article.title "title" output.warn
-      "}{submitted to " * booktitle * "}" output
+      "}{submitted to " booktitle * output
+      archivePrefix missing$
+        {}
+        {
+          ", [Online] " archivePrefix * ":" * eprint * output
+        }
+      if$
+      "}" output
       fin.entry
       if.url.std.interword.spacing
     }
