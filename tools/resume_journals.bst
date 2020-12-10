@@ -248,6 +248,8 @@ ENTRY
     CTLname_format_string
     CTLname_latex_cmd
     CTLname_url_prefix
+    archivePrefix
+    eprint
   }
   {}
   { label }
@@ -2106,7 +2108,13 @@ FUNCTION {submitted}
       format.article.title "title" output.warn
       "}{submission to \emph{" output
       journal output
-      "}}" output
+      archivePrefix missing$
+        { "}" output }
+        {
+          "}, [Online] " archivePrefix * ":" * eprint * output
+        }
+      if$
+      "}" output
       fin.entry
       if.url.std.interword.spacing
     }
