@@ -2116,7 +2116,11 @@ FUNCTION {submitted}
       name.or.dash
       "}{" output
       format.article.title "title" output.warn
-      "}{submitted to " booktitle * output
+      booktitle empty$
+        { "}{in submission" }
+        { "}{submitted to " booktitle * }
+      if$
+      output
       archivePrefix missing$
         {}
         {

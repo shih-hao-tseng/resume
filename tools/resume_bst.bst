@@ -1872,7 +1872,7 @@ FUNCTION {article}
   name.or.dash
   "}{" output
   format.article.title "title" output.warn
-  "}{" output
+  "}{}{" output
   format.journal "journal" output.warn
   year empty$
     { skip$ }

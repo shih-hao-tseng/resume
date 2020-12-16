@@ -1872,7 +1872,7 @@ FUNCTION {article}
   name.or.dash
   "}{" output
   format.article.title "title" output.warn
-  "}{" output
+  "}{}{" output
   format.journal "journal" output.warn
   year empty$
     { skip$ }
@@ -2106,12 +2106,15 @@ FUNCTION {submitted}
       name.or.dash
       "}{" output
       format.article.title "title" output.warn
-      "}{submission to \emph{" output
-      journal output
+      journal empty$
+        { "}{in submission}{" }
+        { "}{submitted to}{" journal emphasize * }
+      if$
+      output
       archivePrefix missing$
-        { "}" output }
+        { }
         {
-          "}, [Online] " archivePrefix * ":" * eprint * output
+          ", [Online] " archivePrefix * ":" * eprint * output
         }
       if$
       "}" output
