@@ -607,15 +607,15 @@ FUNCTION {output.warn}
 
 FUNCTION {fin.entry}
 { this.status.punct punct.no =
-     { skip$ }
-     { "}" }
-   if$
-   this.status.quote quote.close =
-     { "''" * }
-     { skip$ }
-   if$
-write$
-newline$
+    { skip$ }
+    { "}" }
+  if$
+  this.status.quote quote.close =
+    { "''" * }
+    { skip$ }
+  if$
+  write$
+  newline$
 }
 
 
@@ -2112,7 +2112,14 @@ FUNCTION {submitted}
       if$
       output
       archivePrefix missing$
-        { }
+        { 
+          % check if the -2 character is a period (i.e., ".}")
+          duplicate$
+          #-1 #2 substring$ ".}" =
+          { "\nodot" output }  % if so, remove the period at the end  
+          { }
+          if$
+        }
         {
           ", [Online] " archivePrefix * ":" * eprint * output
         }
