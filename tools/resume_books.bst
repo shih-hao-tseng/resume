@@ -1883,6 +1883,22 @@ FUNCTION {book}
   name.or.dash
   "}{" output
   format.article.title "title" output.warn
+  "}{" output
+  publisher missing$
+    { }
+    { 
+      format.series output
+      author empty$
+        { skip$ }
+        { format.editors output }
+      if$
+      format.address.publisher.date output
+      format.volume output
+      format.number output
+      format.note output
+      format.url output
+    }
+  if$
   "}" output
   fin.entry
   if.url.std.interword.spacing
