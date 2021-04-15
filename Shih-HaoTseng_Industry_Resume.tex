@@ -1,5 +1,13 @@
 \documentclass{article}
 
+\iffalse
+\usepackage{multibib}
+\usepackage{enumitem}
+\newcites{books}{References}
+\newcites{journals}{References}
+\newcites{conferences}{References}
+\fi
+
 \input{tools/resume_format}
 \industrytrue
 
@@ -14,6 +22,9 @@
 
 \input{experience}
 
-\input{publications}
+\input{honor_and_awards}
+\newpage
+
+\input{projects}
 
 \end{document}
