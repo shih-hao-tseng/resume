@@ -1,22 +1,24 @@
+\def\indentpaper{\setlength{\parindent}{1em}\hangindent=2.4em}
+
 \section{Selected Projects and Publications}
 \subsection{In-Network Processing}{}{} %Present
 \content{
-\bulletitem{\paper{{\bf S.-H. Tseng}, S.~Han, and A.~Wierman}{In-Network Freshness Control: Trading Throughput for Freshness}{submitted to}{\emph{{IEEE/ACM} Trans. Netw}}}\bulletitem{\paper{{\bf S.-H. Tseng}, S.~Agarwal, R.~Agarwal, H.~Ballani, and A.~Tang}{{CodedBulk}: Inter-Datacenter Bulk Transfers using Network Coding}{{\it Proc. USENIX NSDI}, 2021}}
+\indentpaper%
+\bulletitem{\journal{{\bf S.-H. Tseng}, S.~Han, and A.~Wierman}{In-Network Freshness Control: Trading Throughput for Freshness}{submitted to}{\emph{{IEEE/ACM} Trans. Netw.}\nodot}}
+\indentpaper%
+\bulletitem{\paper{{\bf S.-H. Tseng}, S.~Agarwal, R.~Agarwal, H.~Ballani, and A.~Tang}{{CodedBulk}: Inter-Datacenter Bulk Transfers using Network Coding}{{\it Proc. USENIX NSDI}, 2021}}
 \vspace*{-0.5\baselineskip}
-This is some test
-
-
-
+With the development of virtualization and programmable technologies, networks have become more capable of performing sophisticated functions than simple forwarding. By processing information within the network, I show that we can improve the freshness and throughput of the flows. In the two projects above, I introduced new scheduling functions to the Linux kernel to perform in-network freshness control and built a distributed system that boosts bulk transfer throughput via network coding at intermediate nodes using multithreaded codecs. 
 }
 \vspace*{0.1in}
 
 \iffalse
 \subsection{Controller Synthesis and Deployment}{}{}
 \content{
-\bulletitem{\paper{{\bf S.-H. Tseng}}{Realization, Internal
-  Stability, and Controller Synthesis}{{\it Proc. IEEE ACC}, 2021}}
-\bulletitem{\paper{{\bf S.-H. Tseng} and
-  J.~Anderson}{Deployment Architectures for Cyber-Physical Control
+\indentpaper%
+\bulletitem{\paper{{\bf S.-H. Tseng}}{Realization, Internal Stability, and Controller Synthesis}{{\it Proc. IEEE ACC}, 2021}}
+\indentpaper%
+\bulletitem{\paper{{\bf S.-H. Tseng} and J.~Anderson}{Deployment Architectures for Cyber-Physical Control
   Systems}{{\it Proc. IEEE ACC}, 2020}}
 \vspace*{-0.5\baselineskip}
 
@@ -25,29 +27,40 @@ This is some test
 
 \subsection{Open-Sourced Controller Synthesis Tools}{}{}
 \content{
+\indentpaper%
 \bulletitem{\paper{{\bf S.-H. Tseng} and J.~S. Li}{{SLSpy}: {Python}-Based System-Level Controller Synthesis Framework}{in submission, [Online] arXiv:2004.12565}}
+\indentpaper%
 \bulletitem{\paper{C.~Amo~Alonso and {\bf S.-H. Tseng}}{Effective GPU Parallelization of Distributed and Localized Model Predictive Control}{submitted to Proc. IEEE CDC}}
+\indentpaper%
 \bulletitem{\paper{{\bf S.-H. Tseng}}{A Generic Solver for Unconstrained Control Problems with Integral Functional Objectives}{{\it Proc. IEEE ACC}, 2020}}
 \vspace*{-0.5\baselineskip}
+Synthesizing the optimal controller is a non-trivial task both implementation-wise and computationally. To facilitate controller synthesis, I developed and open-sourced a software framework in Python, the SLSpy, that is shipped with state-of-the-art synthesis algorithms. As such, SLSpy allows easier benchmarking and adoption of the latest theoretical advancements in controller synthesis.
 
+On the other hand, it is important to obtain control inputs swiftly to steer the system in a timely fashion. In the two other projects, my colleague and I leverage GPU to parallelize the computation of control inputs. In the projects, we also show that algorithms should be revised according to the computation structures to fully enjoy GPU parallelization benefits.
 }
 \vspace*{0.1in}
 
 \subsection{Network Stability}{}{}
 \content{
+\indentpaper%
 \bulletitem{\paper{{\bf S.-H. Tseng}}{Perseverance-Aware Traffic Engineering in Rate-Adaptive Networks with Reconfiguration Delay}{{\it Proc. IEEE ICNP}, 2019}}
+\indentpaper%
 \bulletitem{\journal{{\bf S.-H. Tseng}, A.~Tang, G.~Choudury, and S.~Tse}{Routing Stability in Hybrid Software-Defined Networks}{}{\emph{{IEEE/ACM} Trans. Netw.}, 2019}}
 \vspace*{-0.5\baselineskip}
-
+New technologies bring new features into the network. Meanwhile, it is critical for the network operator to ensure stability when adopting them. In the projects above, I investigated the hybrid software-defined networks (SDNs) and rate-adaptive optical networks where we introduce SDN to a legacy router network and operate rate-adaptive links in an optical wide-area network. Both new functions impose new stability challenges, and I design algorithms to guarantee stability and smoothen the transition.
 }
 \vspace*{0.1in}
 
-\subsection{Time-Aware Network Scheduling}{}{} %Present
+\subsection{Time-Aware Network Management}{}{} %Present
 \content{
+\indentpaper%
 \bulletitem{\paper{{\bf S.-H. Tseng}, B.~Bai, and J.~C.~S. Lui}{Hybrid Circuit/Packet Network Scheduling with Multiple Composite Paths}{{\it Proc. IEEE INFOCOM}, 2018}}
+\indentpaper%
 \bulletitem{\paper{A.~Gushchin, {\bf S.-H. Tseng}, and A.~Tang}{Optimization-Based Network Flow Deadline Scheduling}{{\it Proc. IEEE ICNP}, 2016}}
+\indentpaper%
+\bulletitem{\paper{{\bf S.-H. Tseng}, C.~L. Lim, N.~Wu, and A.~Tang}{Time-Aware Congestion-Free Routing Reconfiguration}{{\it Proc. IFIP Networking}, 2016}}
 \vspace*{-0.5\baselineskip}
-
+With the rise of software-defined networking, networks can be more active in achieving flow-level quality of service. In particular, one can include time as a part of the operational constraints. In these projects, I adopt an optimization-based approach to incorporate timing information and design algorithms to achieve swift routing reconfiguration, short flow completion time, and fast forwarding schedule.
 }
 \vspace*{0.1cm}
 
