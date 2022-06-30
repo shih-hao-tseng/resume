@@ -2100,7 +2100,15 @@ FUNCTION {unpublished}
   name.or.dash
   "}{" output
   format.article.title "title" output.warn
-  "}{preparation}" output
+  "}{preparation"
+  output
+  archivePrefix missing$
+    {}
+    {
+      ", [Online] " archivePrefix * ":" * eprint * output
+    }
+  if$
+  "}" output
   fin.entry
   if.url.std.interword.spacing
 }
