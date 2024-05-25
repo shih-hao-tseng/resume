@@ -1,57 +1,47 @@
+BBLS := $(filter-out bst.bbl, $(patsubst tools/resume_%.bst, %.bbl, $(wildcard tools/resume_*.bst)))
+PDFS := $(patsubst %.tex, %.pdf, $(wildcard *.tex))
+
+.PHONY: all clean
+
 all:
-	rm -f books.bbl journals.bbl conferences.bbl
-	pdflatex Shih-HaoTseng_CV.tex
-	bibtex books
-	bibtex journals
-	bibtex conferences
-	pdflatex Shih-HaoTseng_CV.tex
-	pdflatex Shih-HaoTseng_CV.tex
+	rm -f *.bbl
+	pdflatex Shih-HaoTseng_Patent_PublicationList.tex
+	pdflatex Shih-HaoTseng_Patent_PublicationList.tex
+	make $(BBLS)
+	pdflatex Shih-HaoTseng_Resume.tex
 	pdflatex Shih-HaoTseng_Resume.tex
 	bibtex Shih-HaoTseng_Resume
-	pdflatex Shih-HaoTseng_Resume.tex
-	pdflatex Shih-HaoTseng_Resume.tex
-	pdflatex Shih-HaoTseng_Patent_PublicationList.tex
-	pdflatex Shih-HaoTseng_Patent_PublicationList.tex
-	pdflatex Shih-HaoTseng_PublicationList.tex
-	pdflatex Shih-HaoTseng_PublicationList.tex
+	make -B $(PDFS)
 	make clean
 
 clean:
 	rm -f *.gz *.log *.blg *.aux *.out
 
-CV:
-	rm -f books.bbl journals.bbl conferences.bbl
-	pdflatex Shih-HaoTseng_CV.tex
-	bibtex books
-	bibtex journals
-	bibtex conferences
-	pdflatex Shih-HaoTseng_CV.tex
-	pdflatex Shih-HaoTseng_CV.tex
+%.bbl: %.aux
+	bibtex $<
+
+%.pdf: %.tex
+	pdflatex $<
+
+Resume: Shih-HaoTseng_Resume.tex
+	rm -f *.bbl
+	pdflatex $<
+	pdflatex $<
+	bibtex Shih-HaoTseng_$@
+	make -B Shih-HaoTseng_$@.pdf
 	make clean
 
-resume:
-	pdflatex Shih-HaoTseng_Resume.tex
-	bibtex Shih-HaoTseng_Resume
-	pdflatex Shih-HaoTseng_Resume.tex
-	pdflatex Shih-HaoTseng_Resume.tex
+%: Shih-HaoTseng_%.tex
+	rm -f *.bbl
+	pdflatex $<
+	pdflatex $<
+	rm Shih-HaoTseng_*.aux
+	make -B $(patsubst %.aux, %.bbl, $(wildcard *.aux))
+	make -B Shih-HaoTseng_$@.pdf
 	make clean
 
-patent:
-	pdflatex Shih-HaoTseng_Patent_PublicationList.tex
-	pdflatex Shih-HaoTseng_Patent_PublicationList.tex
-	bibtex patents
-	bibtex books
-	bibtex journals
-	bibtex conferences
-	pdflatex Shih-HaoTseng_Patent_PublicationList.tex
-	make clean
+resume: Resume
 
-publication:
-	pdflatex Shih-HaoTseng_PublicationList.tex
-	pdflatex Shih-HaoTseng_PublicationList.tex
-	bibtex patents
-	bibtex books
-	bibtex journals
-	bibtex conferences
-	pdflatex Shih-HaoTseng_PublicationList.tex
-	make clean
+publication: PublicationList
+
+patent: Patent_PublicationList
