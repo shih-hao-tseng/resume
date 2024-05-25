@@ -2126,7 +2126,7 @@ FUNCTION {submitted}
       format.article.title "title" output.warn
       booktitle empty$
         { "}{in submission" }
-        { "}{submitted to " booktitle * }
+        { "}{submitted to {\it " booktitle * "}" * }
       if$
       output
       archivePrefix missing$
